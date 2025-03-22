@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    background-image: url('Fondo1.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-color: #ffefb1;
+
+    font-family: "Patrick Hand", cursive;
+    font-weight: 600;
+    font-style: bold;
+
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+ 
+    text-align: center;
+    padding: 20px 0;
+
+    width: 100%;
+    background: linear-gradient(to bottom, #ffefb1, #fff7d5);
+
+}
+
+.logo {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier padding */
+}
+
+.banner-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.welcome-text {
+    margin-top: 15px;
+    color: #333;
+    font-size: 16px;
+}
+
+.navigation {
+    background-color: #fff7d5;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe987;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.nav-button {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(26, 26, 26, 0.2);
+}
+
+.nav-button-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-button-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-button-subtitle {
+    font-size: 14px;
+}
+
+.icon {
+    background-color: #ff6b6b;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    position: relative;
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+.content {
+    min-height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Additional navigation buttons */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff4757;
+    text-shadow: 0 0 10px rgba(255, 71, 87, 0.8), 0 0 20px rgba(255, 71, 87, 0.5);
+    margin-bottom: 20px;
+    animation: glow 1s infinite alternate;
+}
+
+.profile-img img {
+    animation: bounce 1s infinite alternate;
+}
+
+.button {
+    background-color: #ffffff;
+    border: 1px solid rgba(27, 27, 27, 0);
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+    background-color: #ffe987;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f5f5f5;
+}
+
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-card {
+    background-color: #fffdf5;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+}
+
+.game-card .info {
+    padding: 15px;
+}
+
+.game-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.game-card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.game-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff4757;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.game-card a:hover {
+    background-color: #e84148;
+}
+
+
